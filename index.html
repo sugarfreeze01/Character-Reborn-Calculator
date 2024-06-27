@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Rebirth Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Character Reborn Attribute Calculator</h1>
+        <form id="calculatorForm">
+            <div class="input-group">
+                <label for="strength">Strength:</label>
+                <input type="number" id="strength" name="strength" required>
+            </div>
+            <div class="input-group">
+                <label for="dexterity">Dexterity:</label>
+                <input type="number" id="dexterity" name="dexterity" required>
+            </div>
+            <div class="input-group">
+                <label for="intelligence">Intelligence:</label>
+                <input type="number" id="intelligence" name="intelligence" required>
+            </div>
+            <div class="input-group">
+                <label for="constitution">Constitution:</label>
+                <input type="number" id="constitution" name="constitution" required>
+            </div>
+            <div class="input-group">
+                <label for="charm">Charm:</label>
+                <input type="number" id="charm" name="charm" required>
+            </div>
+            <div class="input-group">
+                <label for="luck">Luck:</label>
+                <input type="number" id="luck" name="luck" required>
+            </div>
+            <div class="input-group">
+                <label for="hp">HP:</label>
+                <input type="number" id="hp" name="hp" required>
+            </div>
+            <div class="input-group">
+                <label for="mp">MP:</label>
+                <input type="number" id="mp" name="mp" required>
+            </div>
+            <div class="input-group">
+                <label for="rebirths">No. of times REBIRTHED:</label>
+                <input type="number" id="rebirths" name="rebirths" required>
+            </div>
+            <div class="input-group">
+                <label for="level">Character Level:</label>
+                <input type="number" id="level" name="level" required>
+            </div>
+            <button type="button" onclick="calculate()">Calculate</button>
+        </form>
+        <div id="results">
+            <h2>Results:</h2>
+            <p id="strResult"></p>
+            <p id="dexResult"></p>
+            <p id="intResult"></p>
+            <p id="conResult"></p>
+            <p id="chaResult"></p>
+            <p id="lukResult"></p>
+            <p id="hpResult"></p>
+            <p id="mpResult"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
